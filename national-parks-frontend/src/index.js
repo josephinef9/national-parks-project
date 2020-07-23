@@ -51,7 +51,6 @@ function listenToPark(nationalpark) {
   const parkBtn = document.getElementById(`national-park-id-${nationalpark.id}`)
   parkBtn.addEventListener("click", function(event){
     fetchParkDetail(nationalpark.id)
-    console.log(event)
   })
 }
 
@@ -62,7 +61,6 @@ function fetchParkDetail(id) {
 }
 
 function showParkDetail(park) {
-  console.log(park)
   const parkDiv = document.getElementById("national-park-detail")
   const parkDetail = document.createElement("div")
   parkDiv.innerHTML = ""
@@ -74,10 +72,41 @@ function showParkDetail(park) {
     <br><br>
     <p>${park.data.attributes.description}</p>
     <br><br>
-    <form>
+    <form id="review-form">
       <label for="inputlg">Leave a Review</label>
       <input class="form-control input-lg" type="textarea" id="review-park-id-${park.data.id}"/>
+      <button id="save-btn-${park.data.id}" class="btn btn-info btn-sm">Save</button>
     </form>
   `
   parkDiv.appendChild(parkDetail)
+  listenToReviewSave(park)
+}
+
+function listenToReviewSave(park) {
+  const reviewForm = document.getElementById("review-form")
+  reviewForm.addEventListener("submit", function(event){
+    event.preventDefault()
+  const reviewEl = document.getElementById(`review-park-id-${park.data.id}`)
+
+    fetch(`http://localhost:3000/national_parks/${park.data.id}/reviews`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify({
+        content: reviewEl.value
+      })
+    }).then(resp => resp.json()).then(review => showReview(review))
+  })
+}
+
+function showReview(review) {
+  const reviewUl = document.getElementById("national-park-reviews")
+  const reviewLi = document.createElement("li")
+  reviewLi.id = `review-id-${review.id}`
+  reviewLi.innerText = `${review.content}`
+  reviewUl.appendChild(reviewLi)
+
+  console.log(review)
 }
