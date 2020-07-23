@@ -45,12 +45,39 @@ function showNationalPark(nationalpark) {
   parkLi.innerHTML = nationalpark.attributes.name
   parkUl.appendChild(parkLi)
   listenToPark(nationalpark)
-  console.log(nationalpark)
 }
 
 function listenToPark(nationalpark) {
   const parkBtn = document.getElementById(`national-park-id-${nationalpark.id}`)
   parkBtn.addEventListener("click", function(event){
+    fetchParkDetail(nationalpark.id)
     console.log(event)
   })
+}
+
+function fetchParkDetail(id) {
+  fetch(`http://localhost:3000/national_parks/${id}`)
+  .then(resp => resp.json())
+  .then(park => showParkDetail(park))
+}
+
+function showParkDetail(park) {
+  console.log(park)
+  const parkDiv = document.getElementById("national-park-detail")
+  const parkDetail = document.createElement("div")
+  parkDiv.innerHTML = ""
+  parkDetail.id = `park-detail-id-${park.data.id}`
+  parkDetail.innerHTML = `
+    <h1>${park.data.attributes.name}</h1>
+    <br>
+    <img src="${park.data.attributes.image_url}">
+    <br><br>
+    <p>${park.data.attributes.description}</p>
+    <br><br>
+    <form>
+      <label for="inputlg">Leave a Review</label>
+      <input class="form-control input-lg" type="textarea" id="review-park-id-${park.data.id}"/>
+    </form>
+  `
+  parkDiv.appendChild(parkDetail)
 }
