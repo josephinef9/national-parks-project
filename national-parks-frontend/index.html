@@ -6,28 +6,38 @@
   <title>National Parks Project</title>
   <style>
     img {
-      max-height: 200px;
+      max-height: 250px;
     }
     textarea {
-      width: 100%;
+      width: 150%;
+    }
+    body {
+      background-color: #C0C0C0;
+    }
+    H1 {
+      text-align: center
+    }
+    H4 {
+      text-align: center
     }
   </style>
 </head>
 <body>
-  <h1>National Park Reviews</h1>
+  <h1 class="text-success">Welcome National Park Lovers!!</h1>
+  <h4>Click on a park to see some information and leave a review!</h4>
   <div class='row'>
 
     <div class='col-md-4'>
-      <h2>National Parks</h2>
+      <h2 class="text-success">National Parks</h2>
       <ul class="list-group" id="list-group">
       </ul>
     </div>
 
-    <div class='col-md-8'>
-      <h2>National Parks</h2>
+    <div class='col-md-7'>
+
       <div id="national-park-detail">
       </div>
-      <ul id="national-park-reviews">
+      <ul id="national-park-reviews" class="list-group">
       </ul>
     </div>
   </div>

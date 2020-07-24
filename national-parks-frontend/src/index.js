@@ -41,6 +41,7 @@ function showNationalPark(nationalpark) {
   const parkUl = document.getElementById("list-group")
   const parkLi = document.createElement("li")
   parkLi.classList.add("list-group-item")
+  parkLi.classList.add("list-group-item-info")
   parkLi.id = `national-park-id-${nationalpark.id}`
   parkLi.innerHTML = nationalpark.attributes.name
   parkUl.appendChild(parkLi)
@@ -66,20 +67,30 @@ function showParkDetail(park) {
   parkDiv.innerHTML = ""
   parkDetail.id = `park-detail-id-${park.data.id}`
   parkDetail.innerHTML = `
-    <h1>${park.data.attributes.name}</h1>
+    <h2 class="text-success">Park Information</h2>
+    <h2>${park.data.attributes.name}</h2>
     <br>
     <img src="${park.data.attributes.image_url}">
     <br><br>
     <p>${park.data.attributes.description}</p>
     <br><br>
     <form id="review-form">
-      <label for="inputlg">Leave a Review</label>
+      <label>Leave a Review</label>
       <input class="form-control input-lg" type="textarea" id="review-park-id-${park.data.id}"/>
       <button id="save-btn-${park.data.id}" class="btn btn-info btn-sm">Save</button>
     </form>
+    <br>
+    <h2>Reviews</h2>
   `
   parkDiv.appendChild(parkDetail)
   listenToReviewSave(park)
+  appendReviews(park)
+}
+
+function appendReviews(park) {
+  const reviewUl = document.getElementById("national-park-reviews")
+  reviewUl.innerHTML = ""
+  park.included.forEach(review => showReview({content: review.attributes.content, id: review.id, national_park_id: review.relationships.national_park.data.id}))
 }
 
 function listenToReviewSave(park) {
@@ -97,16 +108,42 @@ function listenToReviewSave(park) {
       body: JSON.stringify({
         content: reviewEl.value
       })
-    }).then(resp => resp.json()).then(review => showReview(review))
+    }).then(resp => resp.json()).then(function(review) {
+      showReview(review)
+      reviewEl.value = ""
+    })
   })
 }
 
 function showReview(review) {
   const reviewUl = document.getElementById("national-park-reviews")
   const reviewLi = document.createElement("li")
+  reviewLi.classList.add("list-group-item")
+  reviewLi.classList.add("list-group-item-info")
   reviewLi.id = `review-id-${review.id}`
-  reviewLi.innerText = `${review.content}`
+  reviewLi.innerHTML = `
+  <span>${review.content}</span>
+  <button id="delete-btn-${review.id}" class="btn btn-danger btn-sm pull-right">Delete Review</button>
+  `
   reviewUl.appendChild(reviewLi)
+  listenToDelete(review)
+}
 
-  console.log(review)
+function listenToDelete(review) {
+  const deleteButton = document.getElementById(`delete-btn-${review.id}`)
+  deleteButton.addEventListener("click", function(event){
+    deleteReview(review)
+  })
+}
+
+function deleteReview(review) {
+  const wholeReview = document.getElementById(`review-id-${review.id}`)
+
+  fetch(`http://localhost:3000/national_parks/${review.national_park_id}/reviews/${review.id}`, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    }
+  }).then(resp => resp.json()).then(json => wholeReview.remove())
 }
