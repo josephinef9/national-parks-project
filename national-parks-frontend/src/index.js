@@ -101,7 +101,6 @@ function listenToReviewSave(park) {
     event.preventDefault()
   const reviewEl = document.getElementById(`review-park-id-${park.data.id}`)
   const reviewAuthor = document.getElementById(`review-park-author-${park.data.id}`)
-  console.log(reviewAuthor.value)
 
     fetch(`http://localhost:3000/national_parks/${park.data.id}/reviews`, {
       method: "POST",

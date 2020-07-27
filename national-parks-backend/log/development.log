@@ -17886,3 +17886,1387 @@ Processing by NationalParksController#show as */*
 Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/national_parks" for ::1 at 2020-07-27 11:48:05 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jofischer/.asdf/installs/ruby/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by NationalParksController#index as */*
+  [1m[36mNationalPark Load (0.9ms)[0m  [1m[34mSELECT "national_parks".* FROM "national_parks"[0m
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:8
+Completed 200 OK in 80ms (Views: 59.3ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/national_parks/1" for ::1 at 2020-07-27 11:48:07 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mNationalPark Load (0.3ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/national_parks/2" for ::1 at 2020-07-27 13:03:00 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mNationalPark Load (0.3ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/national_parks/2/reviews" for ::1 at 2020-07-27 13:03:16 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"We saw a bear here", "author"=>"Jo", "national_park_id"=>"2", "review"=>{"content"=>"We saw a bear here", "author"=>"Jo"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (1.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "We saw a bear here"], ["national_park_id", 2], ["author", "Jo"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/national_parks/2/reviews/11" for ::1 at 2020-07-27 13:03:18 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"2", "id"=>"11", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/national_parks/2/reviews/6" for ::1 at 2020-07-27 13:03:21 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"2", "id"=>"6", "review"=>{}}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/national_parks/2/reviews" for ::1 at 2020-07-27 13:03:31 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"Jenny Lake was an amazing trail to hike!", "author"=>"Maddie", "national_park_id"=>"2", "review"=>{"content"=>"Jenny Lake was an amazing trail to hike!", "author"=>"Maddie"}}
+  [1m[36mNationalPark Load (0.5ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Jenny Lake was an amazing trail to hike!"], ["national_park_id", 2], ["author", "Maddie"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/national_parks/2/reviews/18" for ::1 at 2020-07-27 13:03:32 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"2", "id"=>"18", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/national_parks/1" for ::1 at 2020-07-27 13:03:44 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mNationalPark Load (11.6ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 14ms (Views: 1.5ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/national_parks/3" for ::1 at 2020-07-27 13:03:48 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/national_parks/3/reviews/5" for ::1 at 2020-07-27 13:03:53 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"3", "id"=>"5", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/national_parks/3/reviews" for ::1 at 2020-07-27 13:04:02 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"We hiked the Charlies Bunion trail there and it lead to some amazing views.", "author"=>"Idan ", "national_park_id"=>"3", "review"=>{"content"=>"We hiked the Charlies Bunion trail there and it lead to some amazing views.", "author"=>"Idan "}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "We hiked the Charlies Bunion trail there and it lead to some amazing views."], ["national_park_id", 3], ["author", "Idan "]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/national_parks/3/reviews/16" for ::1 at 2020-07-27 13:04:04 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"3", "id"=>"16", "review"=>{}}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/national_parks/3/reviews" for ::1 at 2020-07-27 13:04:12 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"We saw so many people who were hiking the Appalachian Trail", "author"=>"Pat ", "national_park_id"=>"3", "review"=>{"content"=>"We saw so many people who were hiking the Appalachian Trail", "author"=>"Pat "}}
+  [1m[36mNationalPark Load (0.3ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "We saw so many people who were hiking the Appalachian Trail"], ["national_park_id", 3], ["author", "Pat "]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/national_parks/3/reviews/17" for ::1 at 2020-07-27 13:04:13 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"3", "id"=>"17", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/national_parks/4" for ::1 at 2020-07-27 13:04:27 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/national_parks/4/reviews" for ::1 at 2020-07-27 13:04:40 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"We took a tour of the Slaughter Canyon Cave and it was intense. Never seen anything like it!!", "author"=>"Liam", "national_park_id"=>"4", "review"=>{"content"=>"We took a tour of the Slaughter Canyon Cave and it was intense. Never seen anything like it!!", "author"=>"Liam"}}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.7ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "We took a tour of the Slaughter Canyon Cave and it was intense. Never seen anything like it!!"], ["national_park_id", 4], ["author", "Liam"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/national_parks/4/reviews/19" for ::1 at 2020-07-27 13:04:42 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"4", "id"=>"19", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.3ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/national_parks/4/reviews" for ::1 at 2020-07-27 13:04:51 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"We hiked all 75 stories down and back up into the main cave and it was worth it!\t", "author"=>"Aaron ", "national_park_id"=>"4", "review"=>{"content"=>"We hiked all 75 stories down and back up into the main cave and it was worth it!\t", "author"=>"Aaron "}}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "We hiked all 75 stories down and back up into the main cave and it was worth it!\t"], ["national_park_id", 4], ["author", "Aaron "]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/national_parks/4/reviews/20" for ::1 at 2020-07-27 13:04:52 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"4", "id"=>"20", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/national_parks/5" for ::1 at 2020-07-27 13:04:55 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/national_parks/5/reviews" for ::1 at 2020-07-27 13:05:08 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"Grand Canyon gets all the hype but I thought this park was so much prettier!", "author"=>"Andrew", "national_park_id"=>"5", "review"=>{"content"=>"Grand Canyon gets all the hype but I thought this park was so much prettier!", "author"=>"Andrew"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Grand Canyon gets all the hype but I thought this park was so much prettier!"], ["national_park_id", 5], ["author", "Andrew"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/national_parks/5/reviews/21" for ::1 at 2020-07-27 13:05:09 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"5", "id"=>"21", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/national_parks/5/reviews" for ::1 at 2020-07-27 13:05:24 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"Painted rock(as seen in the photo) was even cooler in person!", "author"=>"Garett", "national_park_id"=>"5", "review"=>{"content"=>"Painted rock(as seen in the photo) was even cooler in person!", "author"=>"Garett"}}
+  [1m[36mNationalPark Load (0.3ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Painted rock(as seen in the photo) was even cooler in person!"], ["national_park_id", 5], ["author", "Garett"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/national_parks/5/reviews/22" for ::1 at 2020-07-27 13:05:25 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"5", "id"=>"22", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/national_parks/6" for ::1 at 2020-07-27 13:05:51 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/national_parks/6/reviews" for ::1 at 2020-07-27 13:06:00 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"\tMake time to go to this park! It is so much fun! We went sledding down the dunes!", "author"=>"Jo", "national_park_id"=>"6", "review"=>{"content"=>"\tMake time to go to this park! It is so much fun! We went sledding down the dunes!", "author"=>"Jo"}}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "\tMake time to go to this park! It is so much fun! We went sledding down the dunes!"], ["national_park_id", 6], ["author", "Jo"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/national_parks/6/reviews/23" for ::1 at 2020-07-27 13:06:02 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"6", "id"=>"23", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.3ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/national_parks/6/reviews" for ::1 at 2020-07-27 13:06:10 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"The fact that this dessert of sand dunes is surrounded by snow capped mountains is incredible", "author"=>"Maddie", "national_park_id"=>"6", "review"=>{"content"=>"The fact that this dessert of sand dunes is surrounded by snow capped mountains is incredible", "author"=>"Maddie"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "The fact that this dessert of sand dunes is surrounded by snow capped mountains is incredible"], ["national_park_id", 6], ["author", "Maddie"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/national_parks/6/reviews/24" for ::1 at 2020-07-27 13:06:10 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"6", "id"=>"24", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 24]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/national_parks/7" for ::1 at 2020-07-27 13:06:22 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/national_parks/7/reviews" for ::1 at 2020-07-27 13:06:32 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"OMG my favorite park in Utah!!!", "author"=>"Idan", "national_park_id"=>"7", "review"=>{"content"=>"OMG my favorite park in Utah!!!", "author"=>"Idan"}}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "OMG my favorite park in Utah!!!"], ["national_park_id", 7], ["author", "Idan"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/national_parks/7/reviews/25" for ::1 at 2020-07-27 13:06:33 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"7", "id"=>"25", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 25]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/national_parks/7/reviews" for ::1 at 2020-07-27 13:06:45 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"Angels Landing was an experience I will never forget!!!", "author"=>"Pat", "national_park_id"=>"7", "review"=>{"content"=>"Angels Landing was an experience I will never forget!!!", "author"=>"Pat"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Angels Landing was an experience I will never forget!!!"], ["national_park_id", 7], ["author", "Pat"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/national_parks/7/reviews/26" for ::1 at 2020-07-27 13:06:46 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"7", "id"=>"26", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 26]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/national_parks/7/reviews" for ::1 at 2020-07-27 13:06:59 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"Hike the Narrows, you will not regret it!!", "author"=>"Aaron", "national_park_id"=>"7", "review"=>{"content"=>"Hike the Narrows, you will not regret it!!", "author"=>"Aaron"}}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Hike the Narrows, you will not regret it!!"], ["national_park_id", 7], ["author", "Aaron"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/national_parks/7/reviews/27" for ::1 at 2020-07-27 13:07:00 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"7", "id"=>"27", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 27]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/national_parks/8" for ::1 at 2020-07-27 13:07:09 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/national_parks/8/reviews" for ::1 at 2020-07-27 13:07:17 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"\tThe power and artistry of nature in this place is truly incredible", "author"=>"Liam ", "national_park_id"=>"8", "review"=>{"content"=>"\tThe power and artistry of nature in this place is truly incredible", "author"=>"Liam "}}
+  [1m[36mNationalPark Load (0.4ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "\tThe power and artistry of nature in this place is truly incredible"], ["national_park_id", 8], ["author", "Liam "]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/national_parks/8/reviews/28" for ::1 at 2020-07-27 13:07:19 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"8", "id"=>"28", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.3ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 28]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/national_parks/8/reviews" for ::1 at 2020-07-27 13:07:34 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"We hiked delicate arch at sunrise and it was amazing!", "author"=>"Andrew", "national_park_id"=>"8", "review"=>{"content"=>"We hiked delicate arch at sunrise and it was amazing!", "author"=>"Andrew"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "We hiked delicate arch at sunrise and it was amazing!"], ["national_park_id", 8], ["author", "Andrew"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/national_parks/8/reviews/29" for ::1 at 2020-07-27 13:07:34 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"8", "id"=>"29", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 29]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/national_parks/9" for ::1 at 2020-07-27 13:07:36 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/national_parks/9/reviews" for ::1 at 2020-07-27 13:07:44 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"You could spend two weeks in the Canyonlands and still not hike everything!! Its so big and beautiful", "author"=>"Stove", "national_park_id"=>"9", "review"=>{"content"=>"You could spend two weeks in the Canyonlands and still not hike everything!! Its so big and beautiful", "author"=>"Stove"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "You could spend two weeks in the Canyonlands and still not hike everything!! Its so big and beautiful"], ["national_park_id", 9], ["author", "Stove"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/national_parks/9/reviews/30" for ::1 at 2020-07-27 13:07:45 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"9", "id"=>"30", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 30]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/national_parks/9/reviews" for ::1 at 2020-07-27 13:07:55 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"The needles is a really cool place to explore", "author"=>"Garett", "national_park_id"=>"9", "review"=>{"content"=>"The needles is a really cool place to explore", "author"=>"Garett"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "The needles is a really cool place to explore"], ["national_park_id", 9], ["author", "Garett"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/national_parks/9/reviews/31" for ::1 at 2020-07-27 13:07:56 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"9", "id"=>"31", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 31]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/national_parks/10" for ::1 at 2020-07-27 13:08:12 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/national_parks/10/reviews" for ::1 at 2020-07-27 13:08:21 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"Have never witnessed formations like this berfore", "author"=>"Jo", "national_park_id"=>"10", "review"=>{"content"=>"Have never witnessed formations like this berfore", "author"=>"Jo"}}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Have never witnessed formations like this berfore"], ["national_park_id", 10], ["author", "Jo"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/national_parks/10/reviews/32" for ::1 at 2020-07-27 13:08:27 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"10", "id"=>"32", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 32]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/national_parks/10/reviews" for ::1 at 2020-07-27 13:08:36 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"Have never witnessed formations like this before", "author"=>"Jo", "national_park_id"=>"10", "review"=>{"content"=>"Have never witnessed formations like this before", "author"=>"Jo"}}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Have never witnessed formations like this before"], ["national_park_id", 10], ["author", "Jo"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/national_parks/10/reviews/68" for ::1 at 2020-07-27 13:08:37 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"10", "id"=>"68", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 68]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/national_parks/10/reviews" for ::1 at 2020-07-27 13:08:46 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"Thors hammer is really cool", "author"=>"Maddie", "national_park_id"=>"10", "review"=>{"content"=>"Thors hammer is really cool", "author"=>"Maddie"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Thors hammer is really cool"], ["national_park_id", 10], ["author", "Maddie"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/national_parks/10/reviews/33" for ::1 at 2020-07-27 13:08:47 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"10", "id"=>"33", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 33]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/national_parks/11" for ::1 at 2020-07-27 13:08:56 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/national_parks/11/reviews" for ::1 at 2020-07-27 13:09:06 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"\tLooks like it is from a fairytale!!", "author"=>"Idan", "national_park_id"=>"11", "review"=>{"content"=>"\tLooks like it is from a fairytale!!", "author"=>"Idan"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "\tLooks like it is from a fairytale!!"], ["national_park_id", 11], ["author", "Idan"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/national_parks/11/reviews/34" for ::1 at 2020-07-27 13:09:07 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"11", "id"=>"34", "review"=>{}}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 34]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/national_parks/11/reviews" for ::1 at 2020-07-27 13:09:20 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"There is an amazing coffee shop in the town right outside the park!", "author"=>"Stove", "national_park_id"=>"11", "review"=>{"content"=>"There is an amazing coffee shop in the town right outside the park!", "author"=>"Stove"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "There is an amazing coffee shop in the town right outside the park!"], ["national_park_id", 11], ["author", "Stove"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/national_parks/11/reviews/35" for ::1 at 2020-07-27 13:09:22 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"11", "id"=>"35", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 35]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/national_parks/12" for ::1 at 2020-07-27 13:09:30 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"12"}
+  [1m[36mNationalPark Load (0.5ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/national_parks/12/reviews" for ::1 at 2020-07-27 13:09:43 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"amazing", "author"=>"Pat", "national_park_id"=>"12", "review"=>{"content"=>"amazing", "author"=>"Pat"}}
+  [1m[36mNationalPark Load (0.3ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "amazing"], ["national_park_id", 12], ["author", "Pat"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/national_parks/12/reviews/14" for ::1 at 2020-07-27 13:09:44 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"12", "id"=>"14", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 14]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/national_parks/12/reviews" for ::1 at 2020-07-27 13:09:52 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"What can be said about this park that hasnt already been said, it just makes you feel small", "author"=>"Andrew", "national_park_id"=>"12", "review"=>{"content"=>"What can be said about this park that hasnt already been said, it just makes you feel small", "author"=>"Andrew"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "What can be said about this park that hasnt already been said, it just makes you feel small"], ["national_park_id", 12], ["author", "Andrew"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/national_parks/12/reviews/36" for ::1 at 2020-07-27 13:09:53 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"12", "id"=>"36", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 36]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/national_parks/13" for ::1 at 2020-07-27 13:10:04 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mNationalPark Load (0.3ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/national_parks/13/reviews" for ::1 at 2020-07-27 13:10:14 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"Half dome is really cool but if you cant get a permit to hike it, clouds rest is an amazing hike and you can see half dome from there!", "author"=>"Liam ", "national_park_id"=>"13", "review"=>{"content"=>"Half dome is really cool but if you cant get a permit to hike it, clouds rest is an amazing hike and you can see half dome from there!", "author"=>"Liam "}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Half dome is really cool but if you cant get a permit to hike it, clouds rest is an amazing hike and you can see half dome from there!"], ["national_park_id", 13], ["author", "Liam "]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/national_parks/13/reviews/37" for ::1 at 2020-07-27 13:10:15 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"13", "id"=>"37", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.3ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 37]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/national_parks/13/reviews" for ::1 at 2020-07-27 13:10:26 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"\tYosemite falls is unbelievable", "author"=>"Aaron", "national_park_id"=>"13", "review"=>{"content"=>"\tYosemite falls is unbelievable", "author"=>"Aaron"}}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "\tYosemite falls is unbelievable"], ["national_park_id", 13], ["author", "Aaron"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/national_parks/13/reviews/38" for ::1 at 2020-07-27 13:10:27 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"13", "id"=>"38", "review"=>{}}
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.4ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 38]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/national_parks/14" for ::1 at 2020-07-27 13:10:32 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/national_parks/14/reviews" for ::1 at 2020-07-27 13:10:44 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"The shade of blue of this water is incredible", "author"=>"Garett", "national_park_id"=>"14", "review"=>{"content"=>"The shade of blue of this water is incredible", "author"=>"Garett"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "The shade of blue of this water is incredible"], ["national_park_id", 14], ["author", "Garett"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/national_parks/14/reviews/39" for ::1 at 2020-07-27 13:10:46 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"14", "id"=>"39", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 39]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/national_parks/14/reviews" for ::1 at 2020-07-27 13:10:54 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"You can drive around the whole lake and its stunning from start until finish", "author"=>"Jo", "national_park_id"=>"14", "review"=>{"content"=>"You can drive around the whole lake and its stunning from start until finish", "author"=>"Jo"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "You can drive around the whole lake and its stunning from start until finish"], ["national_park_id", 14], ["author", "Jo"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/national_parks/14/reviews/40" for ::1 at 2020-07-27 13:10:55 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"14", "id"=>"40", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 40]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/national_parks/15" for ::1 at 2020-07-27 13:10:58 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/national_parks/15/reviews" for ::1 at 2020-07-27 13:11:08 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"\tIts like walking through a wasteland", "author"=>"Maddie", "national_park_id"=>"15", "review"=>{"content"=>"\tIts like walking through a wasteland", "author"=>"Maddie"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "\tIts like walking through a wasteland"], ["national_park_id", 15], ["author", "Maddie"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/national_parks/15/reviews" for ::1 at 2020-07-27 13:11:15 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"\tVery futuristic", "author"=>"Jo", "national_park_id"=>"15", "review"=>{"content"=>"\tVery futuristic", "author"=>"Jo"}}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "\tVery futuristic"], ["national_park_id", 15], ["author", "Jo"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/national_parks/15/reviews/41" for ::1 at 2020-07-27 13:11:16 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"15", "id"=>"41", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.4ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 41]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/national_parks/15/reviews/42" for ::1 at 2020-07-27 13:11:17 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"15", "id"=>"42", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 42]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/national_parks/16" for ::1 at 2020-07-27 13:11:21 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/national_parks/16/reviews" for ::1 at 2020-07-27 13:11:28 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"God I love the bandlands!!!!!", "author"=>"Idan ", "national_park_id"=>"16", "review"=>{"content"=>"God I love the bandlands!!!!!", "author"=>"Idan "}}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.4ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "God I love the bandlands!!!!!"], ["national_park_id", 16], ["author", "Idan "]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/national_parks/16/reviews" for ::1 at 2020-07-27 13:11:36 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"Highly recommend this park!!", "author"=>"Stove", "national_park_id"=>"16", "review"=>{"content"=>"Highly recommend this park!!", "author"=>"Stove"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Highly recommend this park!!"], ["national_park_id", 16], ["author", "Stove"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/national_parks/16/reviews/43" for ::1 at 2020-07-27 13:11:37 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"16", "id"=>"43", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 43]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/national_parks/16/reviews/44" for ::1 at 2020-07-27 13:11:37 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"16", "id"=>"44", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 44]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/national_parks/1" for ::1 at 2020-07-27 13:11:42 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/national_parks/10" for ::1 at 2020-07-27 13:11:45 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/national_parks/2" for ::1 at 2020-07-27 13:11:47 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 9ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/national_parks" for ::1 at 2020-07-27 13:17:36 -0400
+Processing by NationalParksController#index as HTML
+  [1m[36mNationalPark Load (1.2ms)[0m  [1m[34mSELECT "national_parks".* FROM "national_parks"[0m
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:8
+Completed 200 OK in 27ms (Views: 20.9ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/national_parks/1" for ::1 at 2020-07-27 13:17:44 -0400
+Processing by NationalParksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mNationalPark Load (0.3ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.7ms)
+
+
