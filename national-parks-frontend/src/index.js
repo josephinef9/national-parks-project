@@ -76,7 +76,8 @@ function showParkDetail(park) {
     <br><br>
     <form id="review-form">
       <label>Leave a Review</label>
-      <input class="form-control input-lg" type="textarea" id="review-park-id-${park.data.id}"/>
+      <input class="form-control" type="text" id="review-park-author-${park.data.id}" placeholder="Your Name"/>
+      <input class="form-control input-lg" type="textarea" id="review-park-id-${park.data.id}" placeholder="Your Review"/>
       <button id="save-btn-${park.data.id}" class="btn btn-info btn-sm pull-right">Save</button>
     </form>
     <br>
@@ -88,9 +89,10 @@ function showParkDetail(park) {
 }
 
 function appendReviews(park) {
+  console.log(park)
   const reviewUl = document.getElementById("national-park-reviews")
   reviewUl.innerHTML = ""
-  park.included.forEach(review => showReview({content: review.attributes.content, id: review.id, national_park_id: review.relationships.national_park.data.id}))
+  park.included.forEach(review => showReview({content: review.attributes.content, id: review.id, national_park_id: review.relationships.national_park.data.id, author: review.attributes.author}))
 }
 
 function listenToReviewSave(park) {
@@ -98,6 +100,7 @@ function listenToReviewSave(park) {
   reviewForm.addEventListener("submit", function(event){
     event.preventDefault()
   const reviewEl = document.getElementById(`review-park-id-${park.data.id}`)
+  const reviewAuthor = document.getElementById(`review-park-author-${park.data.id}`)
 
     fetch(`http://localhost:3000/national_parks/${park.data.id}/reviews`, {
       method: "POST",
@@ -106,11 +109,13 @@ function listenToReviewSave(park) {
         "Accept": "application/json"
       },
       body: JSON.stringify({
-        content: reviewEl.value
+        content: reviewEl.value,
+        author: reviewAuthor.value
       })
     }).then(resp => resp.json()).then(function(review) {
       showReview(review)
       reviewEl.value = ""
+      reviewAuthor.value = ""
     })
   })
 }
@@ -122,8 +127,21 @@ function showReview(review) {
   reviewLi.classList.add("list-group-item-info")
   reviewLi.id = `review-id-${review.id}`
   reviewLi.innerHTML = `
-  <span>${review.content}</span>
-  <button id="delete-btn-${review.id}" class="btn btn-danger btn-sm pull-right">Delete Review</button>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Author</th>
+          <th>Review</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>${review.author}</td>
+          <td>${review.content}</td>
+          <td><button id="delete-btn-${review.id}" class="btn btn-danger btn-sm pull-right">Delete Review</button></td>
+        </tr>
+      </tbody>
+    </table>
   `
   reviewUl.appendChild(reviewLi)
   listenToDelete(review)
