@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_23_130120) do
+ActiveRecord::Schema.define(version: 2020_07_27_130350) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2020_07_23_130120) do
   create_table "reviews", force: :cascade do |t|
     t.text "content"
     t.bigint "national_park_id"
+    t.string "author"
     t.index ["national_park_id"], name: "index_reviews_on_national_park_id"
   end
 
