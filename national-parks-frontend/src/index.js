@@ -77,7 +77,7 @@ function showParkDetail(park) {
     <form id="review-form">
       <label>Leave a Review</label>
       <input class="form-control input-lg" type="textarea" id="review-park-id-${park.data.id}"/>
-      <button id="save-btn-${park.data.id}" class="btn btn-info btn-sm">Save</button>
+      <button id="save-btn-${park.data.id}" class="btn btn-info btn-sm pull-right">Save</button>
     </form>
     <br>
     <h2>Reviews</h2>
