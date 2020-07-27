@@ -128,8 +128,21 @@ function showReview(review) {
   reviewLi.classList.add("list-group-item-info")
   reviewLi.id = `review-id-${review.id}`
   reviewLi.innerHTML = `
-  <span>Author: ${review.author} - ${review.content}</span>
-  <button id="delete-btn-${review.id}" class="btn btn-danger btn-sm pull-right">Delete Review</button>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Author</th>
+          <th>Review</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>${review.author}</td>
+          <td>${review.content}</td>
+          <td><button id="delete-btn-${review.id}" class="btn btn-danger btn-sm pull-right">Delete Review</button></td>
+        </tr>
+      </tbody>
+    </table>
   `
   reviewUl.appendChild(reviewLi)
   listenToDelete(review)
