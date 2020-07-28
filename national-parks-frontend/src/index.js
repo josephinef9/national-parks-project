@@ -22,7 +22,32 @@ class NationalPark {
 
 document.addEventListener('DOMContentLoaded', () => {
   fetchNationalParks()
+  const newPark = document.querySelector(".new-park")
+  const newParkBtn = document.createElement("h4")
+  newParkBtn.innerHTML = "Click here to add a park to the list!"
+  newParkBtn.addEventListener("click", function(event){
+    console.log(event)
+    createNewPark()
+  })
+  newPark.appendChild(newParkBtn)
 })
+
+function createNewPark() {
+  const newPark = document.querySelector(".new-park")
+  const newParkDiv = document.createElement("div")
+  newParkDiv.id = "new-park-id"
+  newParkDiv.innerHTML = `
+  <form id='new-park-form'>
+    <label>Add a new park</label>
+    <input class="form-control" type="text" id="new-park-element-name" placeholder="Park Name"/>
+    <input class="form-control" type="text" id="new-park-element-image" placeholder="Image URL"/>
+    <input class="form-control" type="textarea" id="new-park-element-description" placeholder="Park Description"/>
+    <button id="save-btn-new-park" class="btn btn-info btn-sm pull-right">Add Park</button>
+  </form>`
+  newPark.appendChild(newParkDiv)
+  listenToAddPark()
+}
+
 
 function fetchNationalParks() {
   fetch("http://localhost:3000/national_parks")
@@ -46,6 +71,33 @@ function showNationalPark(nationalpark) {
   parkLi.innerHTML = nationalpark.attributes.name
   parkUl.appendChild(parkLi)
   listenToPark(nationalpark)
+}
+
+function listenToAddPark() {
+  const parkForm = document.getElementById("new-park-form")
+  parkForm.addEventListener("submit", function(event){
+    event.preventDefault()
+    parkForm.style.display = "none"
+    const nameEl = document.getElementById("new-park-element-name")
+    const imageEl = document.getElementById("new-park-element-image")
+    const descriptionEl = document.getElementById("new-park-element-description")
+
+    fetch("http://localhost:3000/national_parks", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify({
+        name: nameEl.value,
+        image: imageEl.value,
+        description: descriptionEl.value
+      })
+    }).then(resp => resp.json()).then(function(park){
+      console.log(park)
+      showNationalPark(park.data)
+    })
+  })
 }
 
 function listenToPark(nationalpark) {
@@ -89,7 +141,6 @@ function showParkDetail(park) {
 }
 
 function appendReviews(park) {
-  console.log(park)
   const reviewUl = document.getElementById("national-park-reviews")
   reviewUl.innerHTML = ""
   park.included.forEach(review => showReview({content: review.attributes.content, id: review.id, national_park_id: review.relationships.national_park.data.id, author: review.attributes.author}))
