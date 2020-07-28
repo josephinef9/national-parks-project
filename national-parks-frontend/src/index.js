@@ -4,21 +4,7 @@ class NationalPark {
     this.description = description
     this.image_url = image_url
   }
-
-  // static create(form) {
-  //   fetch()
-  // }
-
-  // listItemElement() {
-  //   const parkLi = document.createElement("li")
-  //   parkLi.classList.add("list-group-item")
-  //   parkLi.id = `national-park-id-${nationalpark.attributes.id}`
-  //   parkLi.innerHTML = nationalpark.attributes.name
-  //   return parkLi
-  // }
 }
-
-// import NationalPark from "./path/to/other/file"
 
 document.addEventListener('DOMContentLoaded', () => {
   fetchNationalParks()
@@ -55,9 +41,6 @@ function fetchNationalParks() {
   .then(function(nationalparks) {
     for(const nationalpark of nationalparks.data) {
       showNationalPark(nationalpark)
-      // const park = new NationalPark(...nationalpark)
-      // const parkUl = document.getElementById("list-group") // grab a piece of the DOM that I want to change
-      // parkUl.appendChild(park.listItemElement())
     }
   })
 }
@@ -66,7 +49,7 @@ function showNationalPark(nationalpark) {
   const parkUl = document.getElementById("list-group")
   const parkLi = document.createElement("li")
   parkLi.classList.add("list-group-item")
-  parkLi.classList.add("list-group-item-info")
+  // parkLi.classList.add("list-group-item-info")
   parkLi.id = `national-park-id-${nationalpark.id}`
   parkLi.innerHTML = nationalpark.attributes.name
   parkUl.appendChild(parkLi)
