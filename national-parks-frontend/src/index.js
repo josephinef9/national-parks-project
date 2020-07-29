@@ -1,3 +1,6 @@
+import { fetchNationalParks, fetchNewPark, fetchParkDetail, fetchNewReview, deleteReview } from "./API.js"
+
+
 class NationalPark {
   constructor(name, description, image_url) {
     this.name = name
@@ -7,12 +10,11 @@ class NationalPark {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  fetchNationalParks()
+  fetchNationalParks(showNationalPark)
   const newPark = document.querySelector(".new-park")
   const newParkBtn = document.createElement("h4")
   newParkBtn.innerHTML = "Click here to add a park to the list!"
   newParkBtn.addEventListener("click", function(event){
-    console.log(event)
     createNewPark()
   })
   newPark.appendChild(newParkBtn)
@@ -34,17 +36,6 @@ function createNewPark() {
   listenToAddPark()
 }
 
-
-function fetchNationalParks() {
-  fetch("http://localhost:3000/national_parks")
-  .then(resp => resp.json())
-  .then(function(nationalparks) {
-    for(const nationalpark of nationalparks.data) {
-      showNationalPark(nationalpark)
-    }
-  })
-}
-
 function showNationalPark(nationalpark) {
   const parkUl = document.getElementById("list-group")
   const parkLi = document.createElement("li")
@@ -64,37 +55,22 @@ function listenToAddPark() {
     const nameEl = document.getElementById("new-park-element-name")
     const imageEl = document.getElementById("new-park-element-image")
     const descriptionEl = document.getElementById("new-park-element-description")
-
-    fetch("http://localhost:3000/national_parks", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify({
-        name: nameEl.value,
-        image: imageEl.value,
-        description: descriptionEl.value
-      })
-    }).then(resp => resp.json()).then(function(park){
-      console.log(park)
-      showNationalPark(park.data)
-    })
+    const body = {
+      name: nameEl.value,
+      image: imageEl.value,
+      description: descriptionEl.value
+    }
+    fetchNewPark(showNationalPark, body)
   })
 }
 
 function listenToPark(nationalpark) {
   const parkBtn = document.getElementById(`national-park-id-${nationalpark.id}`)
   parkBtn.addEventListener("click", function(event){
-    fetchParkDetail(nationalpark.id)
+    fetchParkDetail(showParkDetail, nationalpark.id)
   })
 }
 
-function fetchParkDetail(id) {
-  fetch(`http://localhost:3000/national_parks/${id}`)
-  .then(resp => resp.json())
-  .then(park => showParkDetail(park))
-}
 
 function showParkDetail(park) {
   const parkDiv = document.getElementById("national-park-detail")
@@ -135,22 +111,12 @@ function listenToReviewSave(park) {
     event.preventDefault()
   const reviewEl = document.getElementById(`review-park-id-${park.data.id}`)
   const reviewAuthor = document.getElementById(`review-park-author-${park.data.id}`)
+  const body = {
+    content: reviewEl.value,
+    author: reviewAuthor.value
+  }
 
-    fetch(`http://localhost:3000/national_parks/${park.data.id}/reviews`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify({
-        content: reviewEl.value,
-        author: reviewAuthor.value
-      })
-    }).then(resp => resp.json()).then(function(review) {
-      showReview(review)
-      reviewEl.value = ""
-      reviewAuthor.value = ""
-    })
+  fetchNewReview(showReview, body)
   })
 }
 
@@ -186,16 +152,4 @@ function listenToDelete(review) {
   deleteButton.addEventListener("click", function(event){
     deleteReview(review)
   })
-}
-
-function deleteReview(review) {
-  const wholeReview = document.getElementById(`review-id-${review.id}`)
-
-  fetch(`http://localhost:3000/national_parks/${review.national_park_id}/reviews/${review.id}`, {
-    method: "DELETE",
-    headers: {
-      "Content-Type": "application/json",
-      "Accept": "application/json"
-    }
-  }).then(resp => resp.json()).then(json => wholeReview.remove())
 }
