@@ -27816,3 +27816,870 @@ Processing by ReviewsController#create as JSON
 Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 1.7ms)
 
 
+Started GET "/national_parks" for ::1 at 2020-07-29 08:56:19 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jofischer/.asdf/installs/ruby/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by NationalParksController#index as */*
+  [1m[36mNationalPark Load (0.7ms)[0m  [1m[34mSELECT "national_parks".* FROM "national_parks"[0m
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:8
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:8
+Completed 200 OK in 97ms (Views: 75.9ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/national_parks/1" for ::1 at 2020-07-29 09:09:00 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mNationalPark Load (0.3ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/national_parks/2" for ::1 at 2020-07-29 09:09:03 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mNationalPark Load (0.3ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/national_parks/3" for ::1 at 2020-07-29 09:09:05 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/national_parks/5" for ::1 at 2020-07-29 09:09:07 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/national_parks/1" for ::1 at 2020-07-29 09:09:13 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/national_parks/1/reviews" for ::1 at 2020-07-29 09:10:06 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"Amazing. Just amazing and most beautiful place on earth.We missed Lamar valley cause the road from Canyon to tower was closed.....which sucks unless you want to drive all day. I would dive the trip into three phases...the north...canyon and geysers and lake and ol' faithful. Also...I would camp out rather than go to hotels...if you want to hit the valleys super early and spot some wolves....", "author"=>"Jo", "national_park_id"=>"1", "review"=>{"content"=>"Amazing. Just amazing and most beautiful place on earth.We missed Lamar valley cause the road from Canyon to tower was closed.....which sucks unless you want to drive all day. I would dive the trip into three phases...the north...canyon and geysers and lake and ol' faithful. Also...I would camp out rather than go to hotels...if you want to hit the valleys super early and spot some wolves....", "author"=>"Jo"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.6ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Amazing. Just amazing and most beautiful place on earth.We missed Lamar valley cause the road from Canyon to tower was closed.....which sucks unless you want to drive all day. I would dive the trip into three phases...the north...canyon and geysers and lake and ol' faithful. Also...I would camp out rather than go to hotels...if you want to hit the valleys super early and spot some wolves...."], ["national_park_id", 1], ["author", "Jo"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/national_parks/1/reviews" for ::1 at 2020-07-29 09:10:28 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"I doubt that we will ever have a visit like the one we had early June during the pandemic. I know many things are closed down (visitors center, restaurants, campground were closed early June) but we worked around all of these things and had the park to ourselves. We went to Old Faithful right before sunset and it was just a handful of families and a park ranger. Had to leave through the west gate as campgrounds inside the park were closed but we found a hotel and came back early the next day. More people out and about but if you can, get off of the busier boardwalks and in to some of the lesser visited trails and you will have a quieter experience. Find a local photographer and ask about the wildlife. We met a guy that told us where and what time to see a grizzly bear and he was spot on. Bison are everywhere. There is some road construction which rerouted our plans but wasn’t a huge deal. Love this park.", "author"=>"Maddie", "national_park_id"=>"1", "review"=>{"content"=>"I doubt that we will ever have a visit like the one we had early June during the pandemic. I know many things are closed down (visitors center, restaurants, campground were closed early June) but we worked around all of these things and had the park to ourselves. We went to Old Faithful right before sunset and it was just a handful of families and a park ranger. Had to leave through the west gate as campgrounds inside the park were closed but we found a hotel and came back early the next day. More people out and about but if you can, get off of the busier boardwalks and in to some of the lesser visited trails and you will have a quieter experience. Find a local photographer and ask about the wildlife. We met a guy that told us where and what time to see a grizzly bear and he was spot on. Bison are everywhere. There is some road construction which rerouted our plans but wasn’t a huge deal. Love this park.", "author"=>"Maddie"}}
+  [1m[36mNationalPark Load (14.7ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "I doubt that we will ever have a visit like the one we had early June during the pandemic. I know many things are closed down (visitors center, restaurants, campground were closed early June) but we worked around all of these things and had the park to ourselves. We went to Old Faithful right before sunset and it was just a handful of families and a park ranger. Had to leave through the west gate as campgrounds inside the park were closed but we found a hotel and came back early the next day. More people out and about but if you can, get off of the busier boardwalks and in to some of the lesser visited trails and you will have a quieter experience. Find a local photographer and ask about the wildlife. We met a guy that told us where and what time to see a grizzly bear and he was spot on. Bison are everywhere. There is some road construction which rerouted our plans but wasn’t a huge deal. Love this park."], ["national_park_id", 1], ["author", "Maddie"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 15.8ms)
+
+
+Started DELETE "/national_parks/1/reviews/48" for ::1 at 2020-07-29 09:10:29 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"1", "id"=>"48", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.3ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 48]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/national_parks/1/reviews/50" for ::1 at 2020-07-29 09:10:30 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"1", "id"=>"50", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 50]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/national_parks/2" for ::1 at 2020-07-29 09:10:36 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/national_parks/2/reviews" for ::1 at 2020-07-29 09:11:38 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"Great views, gorgeous lake, its high altitude so the water is cold most of the time, but lots of people swimming. Fishing was harder to come by, so we moved farther up from the main areas to fish and the bottom is kinda rocky. The views of the mountains and lakes are spectacular though. We were warned about bears several times here, so plan accordingly.", "author"=>"Idan", "national_park_id"=>"2", "review"=>{"content"=>"Great views, gorgeous lake, its high altitude so the water is cold most of the time, but lots of people swimming. Fishing was harder to come by, so we moved farther up from the main areas to fish and the bottom is kinda rocky. The views of the mountains and lakes are spectacular though. We were warned about bears several times here, so plan accordingly.", "author"=>"Idan"}}
+  [1m[36mNationalPark Load (0.3ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Great views, gorgeous lake, its high altitude so the water is cold most of the time, but lots of people swimming. Fishing was harder to come by, so we moved farther up from the main areas to fish and the bottom is kinda rocky. The views of the mountains and lakes are spectacular though. We were warned about bears several times here, so plan accordingly."], ["national_park_id", 2], ["author", "Idan"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/national_parks/2/reviews" for ::1 at 2020-07-29 09:12:02 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"If you're going to Yellowstone you must also got to Grand Tetons!!! The overlook over Jackson lake looks like Norway and is gorgeus! Just an hour south of Yellowstone and totally worth it! You should also got to Jenny lake and take the shuttle boat across the lake to beautiful trail with waterfalls and eagle eye views of the Tetons.", "author"=>"Stove", "national_park_id"=>"2", "review"=>{"content"=>"If you're going to Yellowstone you must also got to Grand Tetons!!! The overlook over Jackson lake looks like Norway and is gorgeus! Just an hour south of Yellowstone and totally worth it! You should also got to Jenny lake and take the shuttle boat across the lake to beautiful trail with waterfalls and eagle eye views of the Tetons.", "author"=>"Stove"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "If you're going to Yellowstone you must also got to Grand Tetons!!! The overlook over Jackson lake looks like Norway and is gorgeus! Just an hour south of Yellowstone and totally worth it! You should also got to Jenny lake and take the shuttle boat across the lake to beautiful trail with waterfalls and eagle eye views of the Tetons."], ["national_park_id", 2], ["author", "Stove"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/national_parks/2/reviews/51" for ::1 at 2020-07-29 09:12:03 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"2", "id"=>"51", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 51]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/national_parks/2/reviews/52" for ::1 at 2020-07-29 09:12:03 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"2", "id"=>"52", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 52]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/national_parks/3" for ::1 at 2020-07-29 09:12:10 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/national_parks/3/reviews" for ::1 at 2020-07-29 09:13:10 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"I had been talking about visiting the Smokies for years and was thrilled to have the opportunity finally. We did Clingman’s Dome, Cade’s Cove, and Laurel Falls. The views were incredible. Truly the most beautiful park! The one thing I will say is that it’s very crowded and congested. I didn’t expect hoards and hoards of people to all be on the trail hiking to see a waterfall. For parts of the Cade’s Cove loop, we were going about 3 miles an hour because of the traffic. The park itself gets five stars, but just keep your expectations realistic", "author"=>"Pat", "national_park_id"=>"3", "review"=>{"content"=>"I had been talking about visiting the Smokies for years and was thrilled to have the opportunity finally. We did Clingman’s Dome, Cade’s Cove, and Laurel Falls. The views were incredible. Truly the most beautiful park! The one thing I will say is that it’s very crowded and congested. I didn’t expect hoards and hoards of people to all be on the trail hiking to see a waterfall. For parts of the Cade’s Cove loop, we were going about 3 miles an hour because of the traffic. The park itself gets five stars, but just keep your expectations realistic", "author"=>"Pat"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "I had been talking about visiting the Smokies for years and was thrilled to have the opportunity finally. We did Clingman’s Dome, Cade’s Cove, and Laurel Falls. The views were incredible. Truly the most beautiful park! The one thing I will say is that it’s very crowded and congested. I didn’t expect hoards and hoards of people to all be on the trail hiking to see a waterfall. For parts of the Cade’s Cove loop, we were going about 3 miles an hour because of the traffic. The park itself gets five stars, but just keep your expectations realistic"], ["national_park_id", 3], ["author", "Pat"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/national_parks/3/reviews" for ::1 at 2020-07-29 09:13:33 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"We traveled with 7 members of our family, ages 4-83. It was a wonderful experience. There are so many trails to hike and our family members chose trails based on each person's experience or the trail's difficulty rating. There are several scenic drives through the park as well for those not wanting to hike.", "author"=>"Andrew", "national_park_id"=>"3", "review"=>{"content"=>"We traveled with 7 members of our family, ages 4-83. It was a wonderful experience. There are so many trails to hike and our family members chose trails based on each person's experience or the trail's difficulty rating. There are several scenic drives through the park as well for those not wanting to hike.", "author"=>"Andrew"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "We traveled with 7 members of our family, ages 4-83. It was a wonderful experience. There are so many trails to hike and our family members chose trails based on each person's experience or the trail's difficulty rating. There are several scenic drives through the park as well for those not wanting to hike."], ["national_park_id", 3], ["author", "Andrew"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/national_parks/3/reviews/53" for ::1 at 2020-07-29 09:13:34 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"3", "id"=>"53", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 53]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/national_parks/3/reviews/54" for ::1 at 2020-07-29 09:13:35 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"3", "id"=>"54", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 54]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/national_parks/4" for ::1 at 2020-07-29 09:13:54 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/national_parks/4/reviews" for ::1 at 2020-07-29 09:16:36 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"Our family had visited Carlsbad Caverns several times when our kids were little, and this time, we came back with them as adults. We decided to do the natural entrance walk down to get a good view of the caverns. The walk was quite steep in places; but thankfully, there were hand railings most of the way. The map wasn't readily available and I found out after-the-fact that the rangers keep them behind the desk and you have to ask for them in advance. There are rangers along the way to answer your questions and suggest things to look at more closely. It took over an hour to walk down as I took it slowly due to a bad knee. Once downstairs, there is a snack bar and tables to sit at for a rest. The Big Room walking tour took about another hour and is mostly flat, except for a few places. We arrived at 9:00 and were done for the day by noon. We took the elevator back up. It is quite large and OK for people with claustrophobia. There are two gift shops/bookstores upstairs and an overview movie to watch, before or after your visit.", "author"=>"Liam", "national_park_id"=>"4", "review"=>{"content"=>"Our family had visited Carlsbad Caverns several times when our kids were little, and this time, we came back with them as adults. We decided to do the natural entrance walk down to get a good view of the caverns. The walk was quite steep in places; but thankfully, there were hand railings most of the way. The map wasn't readily available and I found out after-the-fact that the rangers keep them behind the desk and you have to ask for them in advance. There are rangers along the way to answer your questions and suggest things to look at more closely. It took over an hour to walk down as I took it slowly due to a bad knee. Once downstairs, there is a snack bar and tables to sit at for a rest. The Big Room walking tour took about another hour and is mostly flat, except for a few places. We arrived at 9:00 and were done for the day by noon. We took the elevator back up. It is quite large and OK for people with claustrophobia. There are two gift shops/bookstores upstairs and an overview movie to watch, before or after your visit.", "author"=>"Liam"}}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.8ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Our family had visited Carlsbad Caverns several times when our kids were little, and this time, we came back with them as adults. We decided to do the natural entrance walk down to get a good view of the caverns. The walk was quite steep in places; but thankfully, there were hand railings most of the way. The map wasn't readily available and I found out after-the-fact that the rangers keep them behind the desk and you have to ask for them in advance. There are rangers along the way to answer your questions and suggest things to look at more closely. It took over an hour to walk down as I took it slowly due to a bad knee. Once downstairs, there is a snack bar and tables to sit at for a rest. The Big Room walking tour took about another hour and is mostly flat, except for a few places. We arrived at 9:00 and were done for the day by noon. We took the elevator back up. It is quite large and OK for people with claustrophobia. There are two gift shops/bookstores upstairs and an overview movie to watch, before or after your visit."], ["national_park_id", 4], ["author", "Liam"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/national_parks/4/reviews" for ::1 at 2020-07-29 09:16:58 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"We visited in mid March of 2020 and the park had just quit using the elevator due to the coronavirus. The only way to get into the cave was to hike in and hike out. Under normal circumstances, I would recommend walking in through the natural entrance and take the elevator back up.  Given the circumstances, I think less people visited the cave as the hike out is a tough one. We had our 5 and 8 year old with us and they fared much better then their parents on the way out. There is a lot to see on the way to the bottom and there are benches along the way to take breaks . There is lighting and you don't need a flashlight, but there are areas that are a little darker than others. There is a not bathroom until you get to the bottom near the elevators. There is also a store there where you can purchase sandwiches and beverages. Be sure to have plenty of water if you are going to walk back to the surface. It is not that cold while walking and would recommend a light jacket if you are going to be stationery for a while. Good shoes for the hike is a must!  Overall, it was a great time and experience and would highly recommend taking the natural entrance into the cave.", "author"=>"Aaron", "national_park_id"=>"4", "review"=>{"content"=>"We visited in mid March of 2020 and the park had just quit using the elevator due to the coronavirus. The only way to get into the cave was to hike in and hike out. Under normal circumstances, I would recommend walking in through the natural entrance and take the elevator back up.  Given the circumstances, I think less people visited the cave as the hike out is a tough one. We had our 5 and 8 year old with us and they fared much better then their parents on the way out. There is a lot to see on the way to the bottom and there are benches along the way to take breaks . There is lighting and you don't need a flashlight, but there are areas that are a little darker than others. There is a not bathroom until you get to the bottom near the elevators. There is also a store there where you can purchase sandwiches and beverages. Be sure to have plenty of water if you are going to walk back to the surface. It is not that cold while walking and would recommend a light jacket if you are going to be stationery for a while. Good shoes for the hike is a must!  Overall, it was a great time and experience and would highly recommend taking the natural entrance into the cave.", "author"=>"Aaron"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "We visited in mid March of 2020 and the park had just quit using the elevator due to the coronavirus. The only way to get into the cave was to hike in and hike out. Under normal circumstances, I would recommend walking in through the natural entrance and take the elevator back up.  Given the circumstances, I think less people visited the cave as the hike out is a tough one. We had our 5 and 8 year old with us and they fared much better then their parents on the way out. There is a lot to see on the way to the bottom and there are benches along the way to take breaks . There is lighting and you don't need a flashlight, but there are areas that are a little darker than others. There is a not bathroom until you get to the bottom near the elevators. There is also a store there where you can purchase sandwiches and beverages. Be sure to have plenty of water if you are going to walk back to the surface. It is not that cold while walking and would recommend a light jacket if you are going to be stationery for a while. Good shoes for the hike is a must!  Overall, it was a great time and experience and would highly recommend taking the natural entrance into the cave."], ["national_park_id", 4], ["author", "Aaron"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/national_parks/4/reviews/56" for ::1 at 2020-07-29 09:17:02 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"4", "id"=>"56", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 56]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/national_parks/4/reviews/55" for ::1 at 2020-07-29 09:17:03 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"4", "id"=>"55", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 55]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/national_parks/5" for ::1 at 2020-07-29 09:17:14 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/national_parks/5/reviews" for ::1 at 2020-07-29 09:18:25 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"another photographer's dream. Had some rain and clouds but still worth it. It REALLY needs more parking spaces at turnouts. Couldn't even do one trail we wanted to do. Not that many people there since its so remote. We were even surprised at how stunning the views were. Did the south side only in less than a day.", "author"=>"Garett", "national_park_id"=>"5", "review"=>{"content"=>"another photographer's dream. Had some rain and clouds but still worth it. It REALLY needs more parking spaces at turnouts. Couldn't even do one trail we wanted to do. Not that many people there since its so remote. We were even surprised at how stunning the views were. Did the south side only in less than a day.", "author"=>"Garett"}}
+  [1m[36mNationalPark Load (0.3ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "another photographer's dream. Had some rain and clouds but still worth it. It REALLY needs more parking spaces at turnouts. Couldn't even do one trail we wanted to do. Not that many people there since its so remote. We were even surprised at how stunning the views were. Did the south side only in less than a day."], ["national_park_id", 5], ["author", "Garett"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/national_parks/5/reviews" for ::1 at 2020-07-29 09:19:06 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"This is the lesser known national park in Colorado but is so worthy of the status. The scenery here is breathtaking and there are some challenging hikes. Rim rock trail is a must with so many great places to take pictures. Just be careful, there is absolutely nothing to stop you from falling 2,000-3,000 feet to utter doom. After enjoying the rim, drive down to the Gunnison river to see the canyon from the bottom up. I was very impressed with this park. If you’re afraid of heights, beware. Most of the overlooks are 100-600 yards from the road but some are there at the pull offs. The trails not off the road have to be hiked.", "author"=>"Katie", "national_park_id"=>"5", "review"=>{"content"=>"This is the lesser known national park in Colorado but is so worthy of the status. The scenery here is breathtaking and there are some challenging hikes. Rim rock trail is a must with so many great places to take pictures. Just be careful, there is absolutely nothing to stop you from falling 2,000-3,000 feet to utter doom. After enjoying the rim, drive down to the Gunnison river to see the canyon from the bottom up. I was very impressed with this park. If you’re afraid of heights, beware. Most of the overlooks are 100-600 yards from the road but some are there at the pull offs. The trails not off the road have to be hiked.", "author"=>"Katie"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "This is the lesser known national park in Colorado but is so worthy of the status. The scenery here is breathtaking and there are some challenging hikes. Rim rock trail is a must with so many great places to take pictures. Just be careful, there is absolutely nothing to stop you from falling 2,000-3,000 feet to utter doom. After enjoying the rim, drive down to the Gunnison river to see the canyon from the bottom up. I was very impressed with this park. If you’re afraid of heights, beware. Most of the overlooks are 100-600 yards from the road but some are there at the pull offs. The trails not off the road have to be hiked."], ["national_park_id", 5], ["author", "Katie"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/national_parks/5/reviews/57" for ::1 at 2020-07-29 09:19:07 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"5", "id"=>"57", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 57]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/national_parks/5/reviews/58" for ::1 at 2020-07-29 09:19:07 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"5", "id"=>"58", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 58]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/national_parks/6" for ::1 at 2020-07-29 09:19:12 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/national_parks/6/reviews" for ::1 at 2020-07-29 09:22:01 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"From the parking lot to the sleddable dunes it’s a workout so mentally be prepared. However, this is an awesome place. Sand can get hot on sunshiney days so keep that in mind. Rent a sled for $20 from the oasis right down the road. You can legitimately snowboard or sled down these dunes.", "author"=>"Jo", "national_park_id"=>"6", "review"=>{"content"=>"From the parking lot to the sleddable dunes it’s a workout so mentally be prepared. However, this is an awesome place. Sand can get hot on sunshiney days so keep that in mind. Rent a sled for $20 from the oasis right down the road. You can legitimately snowboard or sled down these dunes.", "author"=>"Jo"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.6ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "From the parking lot to the sleddable dunes it’s a workout so mentally be prepared. However, this is an awesome place. Sand can get hot on sunshiney days so keep that in mind. Rent a sled for $20 from the oasis right down the road. You can legitimately snowboard or sled down these dunes."], ["national_park_id", 6], ["author", "Jo"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/national_parks/6/reviews" for ::1 at 2020-07-29 09:22:25 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"We were visiting Great Sand Dunes NP for the first time and the scenery was stunning. The highlight of our visit was driving the Medano Pass Primitive Road. We rented a 4x4 Jeep from PathFinders 4x4 Rentals and it was great fun. We saw a less traveled area of the park and the Jeep made it through all obstacles without worry. Cam at PathFinders made the rental process a breeze.", "author"=>"Maddie", "national_park_id"=>"6", "review"=>{"content"=>"We were visiting Great Sand Dunes NP for the first time and the scenery was stunning. The highlight of our visit was driving the Medano Pass Primitive Road. We rented a 4x4 Jeep from PathFinders 4x4 Rentals and it was great fun. We saw a less traveled area of the park and the Jeep made it through all obstacles without worry. Cam at PathFinders made the rental process a breeze.", "author"=>"Maddie"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "We were visiting Great Sand Dunes NP for the first time and the scenery was stunning. The highlight of our visit was driving the Medano Pass Primitive Road. We rented a 4x4 Jeep from PathFinders 4x4 Rentals and it was great fun. We saw a less traveled area of the park and the Jeep made it through all obstacles without worry. Cam at PathFinders made the rental process a breeze."], ["national_park_id", 6], ["author", "Maddie"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/national_parks/6/reviews/59" for ::1 at 2020-07-29 09:22:26 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"6", "id"=>"59", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 59]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/national_parks/6/reviews/60" for ::1 at 2020-07-29 09:22:26 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"6", "id"=>"60", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 60], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 60]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/national_parks/7" for ::1 at 2020-07-29 09:23:02 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/national_parks/7/reviews" for ::1 at 2020-07-29 09:23:44 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"This is the first time visiting this National Park and the overall experience was excellent! The entrance fee for a car is $35! Worth the price! This park is beautiful with plenty of parking along the road. However, some areas has very limited parking. The Scenic Drive requires a shuttle ticket! You must purchase in advance! It sell out quickly! The drive from St. George is approximately 1 hr and 25 minutes.", "author"=>"Idan", "national_park_id"=>"7", "review"=>{"content"=>"This is the first time visiting this National Park and the overall experience was excellent! The entrance fee for a car is $35! Worth the price! This park is beautiful with plenty of parking along the road. However, some areas has very limited parking. The Scenic Drive requires a shuttle ticket! You must purchase in advance! It sell out quickly! The drive from St. George is approximately 1 hr and 25 minutes.", "author"=>"Idan"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "This is the first time visiting this National Park and the overall experience was excellent! The entrance fee for a car is $35! Worth the price! This park is beautiful with plenty of parking along the road. However, some areas has very limited parking. The Scenic Drive requires a shuttle ticket! You must purchase in advance! It sell out quickly! The drive from St. George is approximately 1 hr and 25 minutes."], ["national_park_id", 7], ["author", "Idan"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/national_parks/7/reviews" for ::1 at 2020-07-29 09:23:58 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"We weren't sure what to expect. We were able to drive into the park and park in the parking lot. They were allowing cars to drive into Zion (which they don't normally do). You can drive to the Lodge if your staying there, or drive through the tunnel and go out the east entrance. Because of the Covid-19 pandemic, we had to make reservations to take the shuttle at 9 am the previous day. We wanted to hike and were not able to get reservations until 10 am or later. This was their way to enforce social distancing. The shuttle made fewer stops than it normally does, however, they stop at the most popular place. Zion is a beautiful park. It reminded us of Yosemite except the mountains were painted.", "author"=>"Stove", "national_park_id"=>"7", "review"=>{"content"=>"We weren't sure what to expect. We were able to drive into the park and park in the parking lot. They were allowing cars to drive into Zion (which they don't normally do). You can drive to the Lodge if your staying there, or drive through the tunnel and go out the east entrance. Because of the Covid-19 pandemic, we had to make reservations to take the shuttle at 9 am the previous day. We wanted to hike and were not able to get reservations until 10 am or later. This was their way to enforce social distancing. The shuttle made fewer stops than it normally does, however, they stop at the most popular place. Zion is a beautiful park. It reminded us of Yosemite except the mountains were painted.", "author"=>"Stove"}}
+  [1m[36mNationalPark Load (0.3ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "We weren't sure what to expect. We were able to drive into the park and park in the parking lot. They were allowing cars to drive into Zion (which they don't normally do). You can drive to the Lodge if your staying there, or drive through the tunnel and go out the east entrance. Because of the Covid-19 pandemic, we had to make reservations to take the shuttle at 9 am the previous day. We wanted to hike and were not able to get reservations until 10 am or later. This was their way to enforce social distancing. The shuttle made fewer stops than it normally does, however, they stop at the most popular place. Zion is a beautiful park. It reminded us of Yosemite except the mountains were painted."], ["national_park_id", 7], ["author", "Stove"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/national_parks/7/reviews/61" for ::1 at 2020-07-29 09:23:59 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"7", "id"=>"61", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 61]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/national_parks/7/reviews/62" for ::1 at 2020-07-29 09:23:59 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"7", "id"=>"62", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 62], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 62]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/national_parks/7/reviews/63" for ::1 at 2020-07-29 09:24:00 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"7", "id"=>"63", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 63]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/national_parks/7/reviews/85" for ::1 at 2020-07-29 09:24:09 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"7", "id"=>"85", "review"=>{}}
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 85], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 85]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/national_parks/7/reviews/84" for ::1 at 2020-07-29 09:24:11 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"7", "id"=>"84", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.3ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 84]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/national_parks/8" for ::1 at 2020-07-29 09:24:39 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/national_parks/8/reviews" for ::1 at 2020-07-29 09:25:12 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"I can definitely say that this is my favorite National Park!!! It’s breathtaking, unbelievable beautiful!! Very easy to drive through. The hundreds of pictures that we did are not enough to describe this place!! Not to be missed!!!", "author"=>"Pat", "national_park_id"=>"8", "review"=>{"content"=>"I can definitely say that this is my favorite National Park!!! It’s breathtaking, unbelievable beautiful!! Very easy to drive through. The hundreds of pictures that we did are not enough to describe this place!! Not to be missed!!!", "author"=>"Pat"}}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "I can definitely say that this is my favorite National Park!!! It’s breathtaking, unbelievable beautiful!! Very easy to drive through. The hundreds of pictures that we did are not enough to describe this place!! Not to be missed!!!"], ["national_park_id", 8], ["author", "Pat"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/national_parks/8/reviews" for ::1 at 2020-07-29 09:25:27 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"We've been cooped up for quite sometime and decided to do a road trip. Arches National Park, spent 2 days, 3 nights. The park wasn't too busy when we got there around 1ish, due to recommendations that if you do go before 8am then just wait. So we got there around 1ish, hot but still a good time. Some trails aren't marked well, so be careful. Some of the hikes are only about 2 to 3 miles round trip. Hikes we did was Devils garden to landscape art to double O, turett arch, delicate arch. Please bring water, water fill stations are at the visitor center and then at the end of the park before looping back. It can be a long wait for water.", "author"=>"Andrew", "national_park_id"=>"8", "review"=>{"content"=>"We've been cooped up for quite sometime and decided to do a road trip. Arches National Park, spent 2 days, 3 nights. The park wasn't too busy when we got there around 1ish, due to recommendations that if you do go before 8am then just wait. So we got there around 1ish, hot but still a good time. Some trails aren't marked well, so be careful. Some of the hikes are only about 2 to 3 miles round trip. Hikes we did was Devils garden to landscape art to double O, turett arch, delicate arch. Please bring water, water fill stations are at the visitor center and then at the end of the park before looping back. It can be a long wait for water.", "author"=>"Andrew"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "We've been cooped up for quite sometime and decided to do a road trip. Arches National Park, spent 2 days, 3 nights. The park wasn't too busy when we got there around 1ish, due to recommendations that if you do go before 8am then just wait. So we got there around 1ish, hot but still a good time. Some trails aren't marked well, so be careful. Some of the hikes are only about 2 to 3 miles round trip. Hikes we did was Devils garden to landscape art to double O, turett arch, delicate arch. Please bring water, water fill stations are at the visitor center and then at the end of the park before looping back. It can be a long wait for water."], ["national_park_id", 8], ["author", "Andrew"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/national_parks/8/reviews/64" for ::1 at 2020-07-29 09:25:28 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"8", "id"=>"64", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 64]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/national_parks/8/reviews/65" for ::1 at 2020-07-29 09:25:28 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"8", "id"=>"65", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 65]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/national_parks/9" for ::1 at 2020-07-29 09:25:50 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/national_parks/9/reviews" for ::1 at 2020-07-29 09:26:54 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"This park is not that big, but you can definitely spend a full day. There are a lot of short hikes and longer ones. But you can see plenty by doing a handful of short ones throughout the day. It is beautiful. Highly recommend taking all the side roads to check out the full park experience. And make sure you do the hike to the mesa arch. It is not very long and only uphill for a short time. The view is worth it.", "author"=>"Liam", "national_park_id"=>"9", "review"=>{"content"=>"This park is not that big, but you can definitely spend a full day. There are a lot of short hikes and longer ones. But you can see plenty by doing a handful of short ones throughout the day. It is beautiful. Highly recommend taking all the side roads to check out the full park experience. And make sure you do the hike to the mesa arch. It is not very long and only uphill for a short time. The view is worth it.", "author"=>"Liam"}}
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "This park is not that big, but you can definitely spend a full day. There are a lot of short hikes and longer ones. But you can see plenty by doing a handful of short ones throughout the day. It is beautiful. Highly recommend taking all the side roads to check out the full park experience. And make sure you do the hike to the mesa arch. It is not very long and only uphill for a short time. The view is worth it."], ["national_park_id", 9], ["author", "Liam"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/national_parks/9/reviews" for ::1 at 2020-07-29 09:27:10 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"This park is ways back in off the main highway (US 191) but well worth the drive. Short trips from turnouts to ancient ruins, petroglyphs etc. We didn't stay in the park, but there are great campgrounds and they open and covid-safe. Lots of 4-wheeling available, usually with a permit (available online) required.", "author"=>"Aaron", "national_park_id"=>"9", "review"=>{"content"=>"This park is ways back in off the main highway (US 191) but well worth the drive. Short trips from turnouts to ancient ruins, petroglyphs etc. We didn't stay in the park, but there are great campgrounds and they open and covid-safe. Lots of 4-wheeling available, usually with a permit (available online) required.", "author"=>"Aaron"}}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "This park is ways back in off the main highway (US 191) but well worth the drive. Short trips from turnouts to ancient ruins, petroglyphs etc. We didn't stay in the park, but there are great campgrounds and they open and covid-safe. Lots of 4-wheeling available, usually with a permit (available online) required."], ["national_park_id", 9], ["author", "Aaron"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/national_parks/9/reviews/66" for ::1 at 2020-07-29 09:27:12 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"9", "id"=>"66", "review"=>{}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 66]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/national_parks/9/reviews/67" for ::1 at 2020-07-29 09:27:12 -0400
+Processing by ReviewsController#destroy as JSON
+  Parameters: {"national_park_id"=>"9", "id"=>"67", "review"=>{}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 67]]
+  ↳ app/controllers/reviews_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:17
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/national_parks/10" for ::1 at 2020-07-29 09:28:16 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:16
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
