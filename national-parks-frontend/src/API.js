@@ -24,10 +24,10 @@ export function fetchNewPark(callback, body) {
 export function fetchParkDetail(callback, id) {
   fetch(`http://localhost:3000/national_parks/${id}`)
   .then(resp => resp.json())
-  .then(park => callback(park))
+  .then(callback)
 }
 
-export function fetchNewReview(callback, body) {
+export function fetchNewReview(callback, park, body) {
   fetch(`http://localhost:3000/national_parks/${park.data.id}/reviews`, {
     method: "POST",
     headers: {
@@ -35,11 +35,7 @@ export function fetchNewReview(callback, body) {
       "Accept": "application/json"
     },
     body: JSON.stringify(body)
-  }).then(resp => resp.json()).then(function(review) {
-    callback(review)
-    reviewEl.value = ""
-    reviewAuthor.value = ""
-  })
+  }).then(resp => resp.json()).then(callback)
 }
 
 export function deleteReview(review) {
@@ -51,5 +47,5 @@ export function deleteReview(review) {
       "Content-Type": "application/json",
       "Accept": "application/json"
     }
-  }).then(resp => resp.json()).then(json => wholeReview.remove())
+  }).then(resp => wholeReview.remove())
 }

@@ -32084,3 +32084,1087 @@ Processing by NationalParksController#show as */*
 Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/national_parks" for ::1 at 2020-07-30 08:22:00 -0400
+Processing by NationalParksController#index as */*
+  [1m[36mNationalPark Load (1.0ms)[0m  [1m[34mSELECT "national_parks".* FROM "national_parks"[0m
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 30]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 30]]
+  ↳ app/controllers/national_parks_controller.rb:7
+Completed 200 OK in 53ms (Views: 42.6ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/national_parks/10" for ::1 at 2020-07-30 08:22:02 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:15
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:15
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/national_parks" for ::1 at 2020-07-30 08:23:03 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jofischer/.asdf/installs/ruby/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by NationalParksController#index as */*
+  [1m[36mNationalPark Load (0.7ms)[0m  [1m[34mSELECT "national_parks".* FROM "national_parks"[0m
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 30]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 30]]
+  ↳ app/controllers/national_parks_controller.rb:7
+Completed 200 OK in 131ms (Views: 93.9ms | ActiveRecord: 20.1ms)
+
+
+Started GET "/national_parks/10" for ::1 at 2020-07-30 08:23:05 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:15
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:15
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/national_parks" for ::1 at 2020-07-30 08:23:39 -0400
+Processing by NationalParksController#index as */*
+  [1m[36mNationalPark Load (0.8ms)[0m  [1m[34mSELECT "national_parks".* FROM "national_parks"[0m
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 30]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 30]]
+  ↳ app/controllers/national_parks_controller.rb:7
+Completed 200 OK in 102ms (Views: 88.8ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/national_parks/10" for ::1 at 2020-07-30 08:23:41 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:15
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:15
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/national_parks" for ::1 at 2020-07-30 08:28:08 -0400
+Processing by NationalParksController#index as */*
+  [1m[36mNationalPark Load (0.4ms)[0m  [1m[34mSELECT "national_parks".* FROM "national_parks"[0m
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 30]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 30]]
+  ↳ app/controllers/national_parks_controller.rb:7
+Completed 200 OK in 75ms (Views: 60.2ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/national_parks/6" for ::1 at 2020-07-30 08:28:10 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mNationalPark Load (0.6ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:15
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:15
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/national_parks" for ::1 at 2020-07-30 08:29:19 -0400
+Processing by NationalParksController#index as */*
+  [1m[36mNationalPark Load (0.4ms)[0m  [1m[34mSELECT "national_parks".* FROM "national_parks"[0m
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 30]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 30]]
+  ↳ app/controllers/national_parks_controller.rb:7
+Completed 200 OK in 58ms (Views: 47.7ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/national_parks/6" for ::1 at 2020-07-30 08:29:20 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:15
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:15
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/national_parks" for ::1 at 2020-07-30 08:31:47 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jofischer/.asdf/installs/ruby/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by NationalParksController#index as */*
+  [1m[36mNationalPark Load (0.9ms)[0m  [1m[34mSELECT "national_parks".* FROM "national_parks"[0m
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 30]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 30]]
+  ↳ app/controllers/national_parks_controller.rb:7
+Completed 200 OK in 91ms (Views: 71.2ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/national_parks/8" for ::1 at 2020-07-30 08:31:49 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:15
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:15
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/national_parks" for ::1 at 2020-07-30 08:32:40 -0400
+Processing by NationalParksController#index as */*
+  [1m[36mNationalPark Load (0.6ms)[0m  [1m[34mSELECT "national_parks".* FROM "national_parks"[0m
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 30]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 30]]
+  ↳ app/controllers/national_parks_controller.rb:7
+Completed 200 OK in 118ms (Views: 103.1ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/national_parks/2" for ::1 at 2020-07-30 08:32:52 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:15
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:15
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/national_parks/2/reviews" for ::1 at 2020-07-30 08:33:24 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"I'll come back every weekend for the rest of my life!!!!!!!!!!!", "author"=>"Pat", "national_park_id"=>"2", "review"=>{"content"=>"I'll come back every weekend for the rest of my life!!!!!!!!!!!", "author"=>"Pat"}}
+  [1m[36mNationalPark Load (0.3ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:7
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:7
+  [1m[36mReview Create (2.2ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "I'll come back every weekend for the rest of my life!!!!!!!!!!!"], ["national_park_id", 2], ["author", "Pat"]]
+  ↳ app/controllers/reviews_controller.rb:7
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:7
+Completed 200 OK in 27ms (Views: 0.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/national_parks" for ::1 at 2020-07-30 08:37:15 -0400
+Processing by NationalParksController#index as */*
+  [1m[36mNationalPark Load (0.6ms)[0m  [1m[34mSELECT "national_parks".* FROM "national_parks"[0m
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 1]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 2]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 3]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 4]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 5]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 6]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 7]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 9]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 10]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 11]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 12]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 13]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 14]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 15]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 16]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 17]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 18]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 19]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 20]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 22]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 23]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 24]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 25]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 26]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 27]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 28]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 30]]
+  ↳ app/controllers/national_parks_controller.rb:7
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 30]]
+  ↳ app/controllers/national_parks_controller.rb:7
+Completed 200 OK in 66ms (Views: 54.5ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/national_parks/8" for ::1 at 2020-07-30 08:37:16 -0400
+Processing by NationalParksController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mNationalPark Load (0.2ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/national_parks_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "reviews"."id" FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:15
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."national_park_id" = $1[0m  [["national_park_id", 8]]
+  ↳ app/controllers/national_parks_controller.rb:15
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/national_parks/8/reviews" for ::1 at 2020-07-30 08:37:32 -0400
+Processing by ReviewsController#create as JSON
+  Parameters: {"content"=>"The best!", "author"=>"Maddie", "national_park_id"=>"8", "review"=>{"content"=>"The best!", "author"=>"Maddie"}}
+  [1m[36mNationalPark Load (0.3ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:7
+  [1m[36mNationalPark Load (0.1ms)[0m  [1m[34mSELECT  "national_parks".* FROM "national_parks" WHERE "national_parks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:7
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("content", "national_park_id", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "The best!"], ["national_park_id", 8], ["author", "Maddie"]]
+  ↳ app/controllers/reviews_controller.rb:7
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:7
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+

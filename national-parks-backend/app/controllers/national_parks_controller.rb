@@ -1,9 +1,8 @@
 class NationalParksController < ApplicationController
-
   def index
     nationalparks = NationalPark.all
     options = {
-      include: [:reviews]
+      include: [:reviews],
     }
     render json: NationalParkSerializer.new(nationalparks, options)
   end
@@ -11,7 +10,7 @@ class NationalParksController < ApplicationController
   def show
     nationalpark = NationalPark.find_by(id: params[:id])
     options = {
-      include: [:reviews]
+      include: [:reviews],
     }
     render json: NationalParkSerializer.new(nationalpark, options)
   end
@@ -27,5 +26,4 @@ class NationalParksController < ApplicationController
       render json: park.errors
     end
   end
-
 end

@@ -1,14 +1,5 @@
 import { fetchNationalParks, fetchNewPark, fetchParkDetail, fetchNewReview, deleteReview } from "./API.js"
 
-
-class NationalPark {
-  constructor(name, description, image_url) {
-    this.name = name
-    this.description = description
-    this.image_url = image_url
-  }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   fetchNationalParks(showNationalPark)
   const newPark = document.querySelector(".new-park")
@@ -40,7 +31,6 @@ function showNationalPark(nationalpark) {
   const parkUl = document.getElementById("list-group")
   const parkLi = document.createElement("li")
   parkLi.classList.add("list-group-item")
-  // parkLi.classList.add("list-group-item-info")
   parkLi.id = `national-park-id-${nationalpark.id}`
   parkLi.innerHTML = nationalpark.attributes.name
   parkUl.appendChild(parkLi)
@@ -107,16 +97,18 @@ function appendReviews(park) {
 
 function listenToReviewSave(park) {
   const reviewForm = document.getElementById("review-form")
-  reviewForm.addEventListener("submit", function(event){
+  reviewForm.addEventListener("submit", event => {
     event.preventDefault()
-  const reviewEl = document.getElementById(`review-park-id-${park.data.id}`)
-  const reviewAuthor = document.getElementById(`review-park-author-${park.data.id}`)
-  const body = {
-    content: reviewEl.value,
-    author: reviewAuthor.value
-  }
+    const reviewEl = document.getElementById(`review-park-id-${park.data.id}`)
+    const reviewAuthor = document.getElementById(`review-park-author-${park.data.id}`)
+    const body = {
+      content: reviewEl.value,
+      author: reviewAuthor.value
+    }
+    fetchNewReview(showReview, park, body)
 
-  fetchNewReview(showReview, body)
+    reviewEl.value = ""
+    reviewAuthor.value = ""
   })
 }
 

@@ -1,11 +1,9 @@
 class ReviewsController < ApplicationController
-
   def create
     nationalpark = NationalPark.find(params[:national_park_id])
     content = params[:review][:content]
     author = params[:review][:author]
     review = Review.new(content: content, author: author, national_park_id: nationalpark.id)
-    # binding.pry
     if review.save
       render json: review
     else
@@ -16,5 +14,4 @@ class ReviewsController < ApplicationController
   def destroy
     render json: Review.find(params[:id]).destroy
   end
-
 end
